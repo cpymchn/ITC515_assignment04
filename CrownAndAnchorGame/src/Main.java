@@ -79,4 +79,5 @@ public class Main {
         
         System.out.println(String.format("Overall win rate = %.1f%%", (float)(totalWins * 100) / (totalWins + totalLosses)));
 	}
+
 }
