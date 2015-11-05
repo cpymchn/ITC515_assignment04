@@ -3,6 +3,7 @@
 /build/
 /bin/
 target/
+CrownAndAnchorGame/bin/
  
 # OS Files #
 .DS_Store
