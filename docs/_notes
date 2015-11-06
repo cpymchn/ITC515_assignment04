@@ -1,0 +1,24 @@
+Known Bugs
+----------
+Bug 1: Game does not pay out at correct level.
+When player wins on 1 match, balance does not increase.
+When player wins with a balance of 100, balance does not increase.
+
+Bug 2: Player cannot reach betting limit:
+Limit set to 0, but game ends with player still with 5 (dollars) remaining.
+
+Bug 3: Odds in the game do not appear to be correct.
+Crown and Anchor games have an approximate 8% bias to the house. So the win : (win+lose) ratio should approximately equal 0.42. This does not appear to be the case.
+
+Observations
+------------
+
+* console does not output the initial games
+* console appears to output games starting in the high 70s and low 80s
+* console does not output the inital turns -- seemingly the game begins at turn 5-12.
+* majority of bets appear to be a quantity of 5. Are other values present or possible? Is 5 the minimum bet?
+* majority of dice results appear to be HEART, CROWN, DIAMOND. Are of values present or possible?
+* when a playerwins with a balance of 100, the balance does not appear to increase.
+* when a player with a balance of 80-wins, the balance does not appear to increase.
+* when player wins immediately after a loss, the balance does not appear to increase.
+

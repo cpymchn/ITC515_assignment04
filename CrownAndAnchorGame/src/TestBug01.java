@@ -5,7 +5,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class GameTest
+public class TestBug01
 {
   private Player player;
   
