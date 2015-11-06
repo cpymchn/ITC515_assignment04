@@ -42,8 +42,8 @@ public class Main {
                     turn++;                    
                 	DiceValue pick = DiceValue.getRandom();
                    
-                	System.out.printf("Turn %d: %s bet %d on %s\n",
-                			turn, player.getName(), bet, pick); 
+//              	System.out.printf("Turn %d: %s bet %d on %s\n",
+//              			turn, player.getName(), bet, pick); 
                 	
                 	int winnings = game.playRound(player, pick, bet);
                     cdv = game.getDiceValues();
@@ -52,13 +52,13 @@ public class Main {
                     		cdv.get(0), cdv.get(1), cdv.get(2));
                     
                     if (winnings > 0) {
-	                    System.out.printf("%s won %d, balance now %d\n\n",
-	                    		player.getName(), winnings, player.getBalance());
+//                 System.out.printf("%s won %d, balance now %d\n\n",
+//                   		player.getName(), winnings, player.getBalance());
 	                	winCount++; 
                     }
                     else {
-	                    System.out.printf("%s lost, balance now %d\n\n",
-	                    		player.getName(), player.getBalance());
+//                 System.out.printf("%s lost, balance now %d\n\n",
+//                   		player.getName(), player.getBalance());
 	                	loseCount++;
                     }
                     

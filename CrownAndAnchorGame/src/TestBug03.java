@@ -49,6 +49,6 @@ public class TestBug03
     float ratio = (float) winCount / (winCount + loseCount);
     
     // test
-    assertFalse (ratio == 0.42);
+    assertFalse (ratio == 0.49);
   }
 }
