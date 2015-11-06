@@ -33,22 +33,26 @@ public class TestBug03
     int loseCount = 0;
     
     // play round
-    Dice d1 = new Dice();
-    Dice d2 = new Dice();
-    Dice d3 = new Dice();
-    Game game = new Game (d1, d2, d3);
-    DiceValue pick = DiceValue.getRandom();
-    int win = game.playRound(player,pick, bet);
-    if (win > 0) {
-      winCount++;
-    }
-    else {loseCount++;}
-    
+
+      Dice d1 = new Dice();
+      Dice d2 = new Dice();
+      Dice d3 = new Dice();
+      Game game = new Game (d1, d2, d3);
+      
+      for (int round=0; round < 1000; round++)
+      {
+        DiceValue pick = DiceValue.getRandom();
+        int win = game.playRound(player,pick, bet);
+        if (win > 0) {
+        winCount++;
+        }
+        else {loseCount++;}
+      }
     
     
     float ratio = (float) winCount / (winCount + loseCount);
     
     // test
-    assertFalse (ratio == 0.49);
+    assertTrue (ratio == 0.42);
   }
 }
